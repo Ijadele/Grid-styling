@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+
+}
+
+nav {
+    width: 100%;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color:  black;
+}
+
+
+/* The header part */
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(32, 32, 230);
+}
+ 
+
+/* The sections */
+
+.self-item {
+    background-color: orangered;
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.list-item {
+    border: 1px solid transparent;
+    border-radius: 10px; 
+    padding: 30px 10px;
+    width: 70%;
+    margin: 30px auto;
+ }
+
+ .list-item p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+ }
+
+ button {
+    background-color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid transparent;
+ }
+
+ #list-one {
+    background-color: rgb(13, 116, 242);
+ }
+
+ #list-two {
+    background-color: rgb(27, 73, 106);
+ }
+
+ #list-three {
+    background-color: rgb(29, 98, 182);
+ }
+
+ #list-four {
+    background-color: rgb(76, 135, 199);
+ }
+
+
+ .grid-items {
+    color: #000;
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .grid-items .title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+   }
+
+
+@media screen and (min-width: 720px) {
+    header {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 60% auto;
+        margin-top: 5rem;
+    }
+
+    .self-item {
+        padding: 20px;
+        margin-top: 10rem;
+        text-align: left;
+        height: fit-content;
+        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .list-item {
+        width: 95%;
+    }
+    
+   .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   }
+
+}
